@@ -29,7 +29,13 @@ class Impressao{
 
 	function impresso($value){
 		$model_impressao = new Model_impressao();
-		$this->mover_arquivo($value);
+		$impresso = $model_impressao->get('IMPRESSO', 'boletos_pf',' WHERE CONTADOR="'.$value.'"','','');
+		
+		foreach($impresso[0] as $imp){
+			if($imp == 0){
+				$this->mover_arquivo($value);
+			}
+		}
 		return $model_impressao->put('IMPRESSO=1','boletos_pf','CONTADOR='.$value);
 	}
 
