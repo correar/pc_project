@@ -23,4 +23,17 @@ $(document).on("submit", "form", function(event)
     });
 });
 
+$('input[type=checkbox][class=cb-selector]').click(function() {
+      var cb = $(this),
+        name = cb.attr('data-for');
+      
+      if(name == null)
+        return false;
+      $('input[type=checkbox][name^='+name+']')
+        .prop('checked', cb.prop('checked'))
+        .click(function() {
+          if(!$(this).prop('checked'))
+            cb.prop('checked', false);
+        });
+    });
 

@@ -55,7 +55,8 @@ $(document).on("submit", "form", function(event)
 
 $("#error_pf").hide();
 $("#result_pf").hide();
-
+$("#error_pj").hide();
+$("#result_pj").hide();
 
 $("#arquivo_pf").on('change', function(){
   var file = this.files[0];
@@ -73,3 +74,5 @@ $("#arquivo_pf").on('change', function(){
     //console.log("error1");
   }
 });
+
+
