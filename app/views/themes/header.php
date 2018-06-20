@@ -34,8 +34,13 @@
           					<a class="dropdown-item" href="impressaoPJ.php">Pessoa Jurídica</a>
         				</div>
 				      </li>
-					  <li class="nav-item">
-				        <a class="nav-link" href="validacao.php">Validação dos Boletos</a>
+					  <li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle" href="#" id="validacaoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Validação dos Boletos</a>
+						<div class="dropdown-menu" aria-labelledby="validacaoDropdown">
+          					<a class="dropdown-item" href="validacaoPF.php">Pessoa Física</a>
+							<div class="dropdown-divider"></div>
+          					<a class="dropdown-item" href="validacaoPJ.php">Pessoa Jurídica</a>
+        				</div>
 				      </li>
     				</ul>
   				</div>
