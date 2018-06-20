@@ -6,6 +6,7 @@
 	$estado = $_POST['estado'];
 	foreach ($_POST as $key => $value) {
 		if($key != "estado"){
+
 			foreach ($value as $k => $v) {
 				$impressao->impresso($v);
 			}

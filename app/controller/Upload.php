@@ -134,7 +134,8 @@ Class Upload {
 			$cnt++;
 			fclose($conteudo);
 			rename($arquivo, $dir."separados/".$contador.".xml");
-			$model_upload->post($data);
+			$table = 'boletos_pf';
+			$model_upload->post($data,$table);
 		}
 		
 		

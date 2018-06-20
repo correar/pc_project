@@ -1,0 +1,4 @@
+sudo mount -t cifs //10.0.0.134/source pfseparados/ -o user=victor.rodrigues,dir_mode=0777,file_mode=0777,uid=1000,gid=1000,password=654321
+
+sudo ln -s /mnt/pfseparados /var/www/html/unimed/assets/files/pf/impressao
+
