@@ -6,9 +6,9 @@
 	$tipo=$_GET['tipo'];
 	$tabela=$_GET['tabela'];
 	if($tipo == "PF"){
-		$class = 'class="alert alert-success"';
+		$class = 'class="alert alert-primary"';
 	}else{
-		$class = 'class="alert alert-warning"';
+		$class = 'class="alert alert-secondary"';
 	}
 	$impressao = new Impressao();
 	include "app/views/impressao/index.php";
