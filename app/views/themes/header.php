@@ -29,17 +29,17 @@
 				      <li class="nav-item dropdown">
 				        <a class="nav-link dropdown-toggle" href="#" id="impressaoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Impressão dos Boletos</a>
 						<div class="dropdown-menu" aria-labelledby="impressaoDropdown">
-          					<a class="dropdown-item" href="impressaoPF.php">Pessoa Física</a>
+							<a class="dropdown-item" href="impressao.php?tipo=PF&tabela=boletos_pf">Pessoa Física</a>
 							<div class="dropdown-divider"></div>
-          					<a class="dropdown-item" href="impressaoPJ.php">Pessoa Jurídica</a>
+          					<a class="dropdown-item" href="impressao.php?tipo=PJ&tabela=boletos_pj">Pessoa Jurídica</a>
         				</div>
 				      </li>
 					  <li class="nav-item dropdown">
 				        <a class="nav-link dropdown-toggle" href="#" id="validacaoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Validação dos Boletos</a>
 						<div class="dropdown-menu" aria-labelledby="validacaoDropdown">
-          					<a class="dropdown-item" href="validacaoPF.php">Pessoa Física</a>
+          					<a class="dropdown-item" href="validacao.php?titulo=PF&tipo=pf">Pessoa Física</a>
 							<div class="dropdown-divider"></div>
-          					<a class="dropdown-item" href="validacaoPJ.php">Pessoa Jurídica</a>
+          					<a class="dropdown-item" href="validacao.php?titulo=PJ&tipo=pj">Pessoa Jurídica</a>
         				</div>
 				      </li>
     				</ul>
